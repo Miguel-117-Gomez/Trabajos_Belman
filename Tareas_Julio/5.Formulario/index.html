@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!--Se crea el componente de Formulario-->
+    <form id="formulario">
+    <!--Se crea contenedor dentro de contenedor, div dentro de div-->
+        <!--Contenedor de Nombre, Apellido-->
+        <div class="form-persona">
+            <div class="persona-group">
+                <h1>Formulario Belman</h1>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required>
+                <br>
+            </div>
+
+            <div class="persona-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Escriba su apellido" required>
+                <br>
+            </div>
+        </div>
+        <!--Contenedor de Tipo de documento y documento-->
+        <div class="documento">
+            <div class="documento-group">
+                <label for="tipoDoc">Tipo de Documento:</label>
+                <select id="tipoDoc" name="TipoDoc" required>
+                    <option value="" disabled selected>Seleccione...</option>
+                    <option value="T.I">Targeta de identidad</option>
+                    <option value="C.C">Cedula de ciudadania</option>
+                </select>
+                <br>
+            </div>
+        
+            <div class="documento-group">
+                <label for="documento">Número de DNI:</label>
+                <input type="text" id="documento" name="documento" placeholder="Escriba su número de documento" required>
+                <br>
+            </div>
+        </div>
+        <!--Conetendor de Fecha nacimiento, Correo electronico-->
+        <div class="informacion">
+            <div class="info-group">
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha" placeholder="Ponga su fecha de nacimiento" required>
+                <br><br>
+            </div>
+
+            <div class="info-group">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" placeholder="Escriba su correo electronico" required>
+                <br><br>
+            </div>
+        </div>
+        <!--Conetendor de Check y Envio-->
+        <div class="buttons">
+            <div class="buttons-group">
+                <input type="checkbox" id="check" name="check" required>
+                <label for="check">Estoy de acuerdo con las políticas.</label>
+            </div>
+
+            <div class="buttons-group">
+                <button id="button" type="submit">Enviar</button>
+            </div>
+    </form>
+</body>
+</html>
