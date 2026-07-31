@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="formulario">
+    <h1>Formulario Belman</h1>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <br><br>
+
+    <label for="apellido">Apellido:</label> 
+    <input type="text" id="apellido" name="apellido" required>
+    <br><br>
+
+    <label for="tipoDoc">Tipo de Documento:</label>
+    <select id="tipoDoc" name="TipoDoc">
+
+        <option value = " ">Seleccione una opción</option>
+        <option value = "T.I">Targeta de identidad</option>
+        <option value = "C.C">Cedula de ciudadania</option>
+    </select>
+    <br><br>
+    
+    <label for="documento">Número de DNI:</label>
+    <input type="text" id="documento" name="documento" required>
+    <br><br>
+
+    <label for="fecha">Fecha de nacimiento:</label>
+    <input type="date" id="fecha" name="fecha" required>
+    <br><br>
+
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" name="correo" required>
+    <br><br>
+
+    <input type="checkbox" id="check" name="check" required>
+    <label for="check">Estoy de acuerdo con las políticas.</label>
+
+    <button type="submit">Enviar</button>
+</form>
+</body>
+</html>
